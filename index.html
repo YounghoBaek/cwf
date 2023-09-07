@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <section class="one"></section>
+    <section class="two">
+        <div class="block">
+            <div class="box">
+                <p class="number">
+                    <span class="num">80</span>
+                    <span class="sub">%</span>
+                </p>
+                <p class="title">HTML</p>
+            </div>
+            <span class="dots"></span>
+            <svg class="svg">
+                <circle class="circle" cx="90" cy="90" r="80" />
+            </svg>
+        </div>
+        <div class="block">
+            <div class="box">
+                <p class="number">
+                    <span class="num">100</span>
+                    <span class="sub">%</span>
+                </p>
+                <p class="title">CSS</p>
+            </div>
+            <span class="dots"></span>
+            <svg class="svg">
+                <circle class="circle" cx="90" cy="90" r="80" />
+            </svg>
+        </div>
+        <div class="block">
+            <div class="box">
+                <p class="number">
+                    <span class="num">50</span>
+                    <span class="sub">%</span>
+                </p>
+                <p class="title">JS</p>
+            </div>
+            <span class="dots"></span>
+             <svg class="svg">
+                <defs>
+ <!--definitions 정의들을 저장하기위한 요소 
+    리니어그라디언트를 정의해서 사용하도록하겠습니다
+    이 때 이요소 내에 정의된 항목은 렌더링되지 않습니다.
+    linearGradient태그는 선형 그라디언트를 정의합니다
+    이이름을 호출해서 사용하면 SVG 내의 다른요소에서 참조가능합니다
+    offset="0%" 그라디언트의 시작점에서 얼마나 떨어져있는지를 나타내는것이
+    offset인데 0%이므로 시작지점을 의미하는것
+    이 시작지점의 stop-color="aqua"인것은 시작컬러가 aqua
+    종료컬러가 로얄블루라는것 -->
+
+
+                    <linearGradient id="gradientStyle">
+                        <stop offset="0%" stop-color="aqua"/>
+                        <stop offset="100%" stop-color="royalblue"/>
+                    </linearGradient>
+                </defs>
+
+                <circle class="circle" cx="90" cy="90" r="80" />
+            </svg>
+        </div>
+
+    </section>
+    <section class="three"></section>
+</body>
+</html>
